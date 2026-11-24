@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+#
+# Org-wide CodeRabbit defaults for every shotledger repository.
+# A repository's own .coderabbit.yaml replaces this file entirely unless it
+# sets `inheritance: true`; then it adds to or overrides these values.
+# Docs: https://docs.coderabbit.ai/configuration/central-configuration
+
+language: en-US
+early_access: false
+
+reviews:
+  profile: chill
+  # Keep the summary in the walkthrough comment; never rewrite the PR body.
+  high_level_summary: true
+  high_level_summary_in_walkthrough: true
+  poem: false
+  auto_review:
+    enabled: true
+    drafts: false
+    # Dependency bots: CI and the required checks gate these, not a review.
+    ignore_usernames:
+      - renovate[bot]
+      - dependabot[bot]
+  path_filters:
+    - '!**/pnpm-lock.yaml'
+    - '!**/package-lock.json'
+    - '!**/yarn.lock'
+
+chat:
+  auto_reply: true
