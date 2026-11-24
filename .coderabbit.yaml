@@ -16,7 +16,7 @@ reviews:
   poem: false
   auto_review:
     enabled: true
-    drafts: false
+    drafts: true
     # Dependency bots: CI and the required checks gate these, not a review.
     ignore_usernames:
       - renovate[bot]

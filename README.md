@@ -14,7 +14,7 @@ The repository name must stay `coderabbit`.
 - `chill` review profile.
 - Summary in the walkthrough comment; the PR body is left alone.
 - Renovate and Dependabot PRs are not reviewed.
-- Draft PRs are not reviewed. Comment `@coderabbitai review` to ask for one.
+- Draft PRs are reviewed too. Comment `@coderabbitai review` to ask for a fresh review.
 - Lockfiles are skipped.
 
 ## Repository rules
